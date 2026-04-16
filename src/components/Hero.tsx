@@ -140,15 +140,11 @@ const Hero = () => {
                         {/* Frame 1 - Rotated left, behind */}
                         <div className="absolute top-8 left-0 w-72 h-80 lg:w-80 lg:h-96 transform -rotate-6 transition-transform hover:rotate-0 duration-500">
                             <div className="relative w-full h-full bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white">
-                                {/* Placeholder for image */}
-                                <div className="w-full h-full bg-gradient-to-br from-cth-blue/20 to-cth-green/20 flex items-center justify-center">
-                                    <div className="text-center text-gray-400">
-                                        <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                        </svg>
-                                        <p className="text-sm font-semibold">Photo 1</p>
-                                    </div>
-                                </div>
+                                <img
+                                    src="/images/hero_1.jpeg"
+                                    alt="Children at Christ The Hope"
+                                    className="w-full h-full object-cover"
+                                />
                                 {/* Decorative corner sticker */}
                                 <div className="absolute -top-3 -right-3 w-12 h-12 bg-cth-orange rounded-full flex items-center justify-center text-white font-bold shadow-lg">
                                     ✨
@@ -159,15 +155,11 @@ const Hero = () => {
                         {/* Frame 2 - Rotated right, in front */}
                         <div className="absolute bottom-8 right-0 w-72 h-80 lg:w-80 lg:h-96 transform rotate-6 transition-transform hover:rotate-0 duration-500 z-10">
                             <div className="relative w-full h-full bg-white rounded-3xl shadow-2xl overflow-hidden border-8 border-white">
-                                {/* Placeholder for image */}
-                                <div className="w-full h-full bg-gradient-to-br from-cth-pink/20 to-cth-purple/20 flex items-center justify-center">
-                                    <div className="text-center text-gray-400">
-                                        <svg className="w-16 h-16 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                        </svg>
-                                        <p className="text-sm font-semibold">Photo 2</p>
-                                    </div>
-                                </div>
+                                <img
+                                    src="/images/hero_2.jpeg"
+                                    alt="Community support at Christ The Hope"
+                                    className="w-full h-full object-cover"
+                                />
                                 {/* Decorative corner sticker */}
                                 <div className="absolute -top-3 -left-3 w-12 h-12 bg-cth-green rounded-full flex items-center justify-center text-white font-bold shadow-lg">
                                     ❤️

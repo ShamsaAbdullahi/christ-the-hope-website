@@ -27,9 +27,9 @@ const About = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border-4 border-cth-purple/30 rounded-3xl"></div>
             <div className="relative aspect-[4/3] bg-gradient-to-br from-cth-pink/20 to-cth-blue/20 rounded-3xl overflow-hidden shadow-2xl transform hover:scale-105 transition-transform duration-300">
-              <img 
-                src="/placeholder-children.jpg" 
-                alt="Children at Christ The Hope" 
+              <img
+                src="/images/about_1.jpeg"
+                alt="Children at Christ The Hope"
                 className="w-full h-full object-cover"
               />
             </div>
