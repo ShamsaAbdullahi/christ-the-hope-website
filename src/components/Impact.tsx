@@ -8,15 +8,15 @@ const Impact = () => {
   ];
 
   return (
-    <section className="bg-cth-purple-deep py-12 lg:py-16">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-3 gap-6 lg:gap-12">
+    <section className="bg-cth-purple-deep py-10 sm:py-12 lg:py-16">
+      <div className="container-site">
+        <div className="grid grid-cols-1 xs:grid-cols-3 gap-0 xs:gap-6 lg:gap-12 divide-y xs:divide-y-0 divide-white/10">
           {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white mb-2">
+            <div key={stat.label} className="text-center py-6 xs:py-0 first:pt-0 last:pb-0">
+              <div className="text-4xl sm:text-4xl lg:text-5xl font-display font-bold text-white mb-1 sm:mb-2">
                 {stat.value}
               </div>
-              <div className="text-xs sm:text-sm lg:text-base text-white/70 font-medium">
+              <div className="text-sm sm:text-sm lg:text-base text-white/70 font-medium px-2">
                 {stat.label}
               </div>
             </div>

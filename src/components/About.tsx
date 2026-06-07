@@ -28,38 +28,38 @@ const values = [
 
 const About = () => {
   return (
-    <section id="about" className="py-20 lg:py-32 bg-cth-cream">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="max-w-3xl mb-16 lg:mb-20">
+    <section id="about" className="section-padding bg-cth-cream">
+      <div className="container-site">
+        <div className="max-w-3xl mb-12 sm:mb-16 lg:mb-20">
           <p className="text-cth-purple font-semibold uppercase tracking-wider text-sm mb-3">
             Our Story
           </p>
-          <h2 className="text-4xl lg:text-5xl font-display text-balance leading-tight mb-6">
+          <h2 className="section-heading leading-tight mb-4 sm:mb-6">
             Building futures, <span className="text-cth-purple">one child</span> at a time
           </h2>
-          <p className="text-lg text-cth-warm leading-relaxed">
+          <p className="text-base sm:text-lg text-cth-warm leading-relaxed">
             Christ The Hope Children's Center is a community-driven movement dedicated to
             transforming the lives of disadvantaged children — with compassion, dignity, and hope.
           </p>
         </div>
 
-        <div className="space-y-20 lg:space-y-28">
+        <div className="space-y-14 sm:space-y-20 lg:space-y-28">
           {storyActs.map((act, index) => (
             <div
               key={act.label}
-              className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-center ${
                 index % 2 === 1 ? 'lg:[&>*:first-child]:order-2' : ''
               }`}
             >
-              <div className="space-y-4">
-                <span className="inline-block text-sm font-semibold uppercase tracking-wider text-cth-purple bg-cth-purple-tint px-4 py-1.5 rounded-full">
+              <div className="space-y-3 sm:space-y-4 order-2 lg:order-none">
+                <span className="inline-block text-xs sm:text-sm font-semibold uppercase tracking-wider text-cth-purple bg-cth-purple-tint px-3 sm:px-4 py-1.5 rounded-full">
                   {act.label}
                 </span>
-                <p className="text-xl lg:text-2xl text-cth-charcoal leading-relaxed font-display">
+                <p className="text-lg sm:text-xl lg:text-2xl text-cth-charcoal leading-relaxed font-display">
                   {act.text}
                 </p>
               </div>
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl order-1 lg:order-none">
                 <img
                   src={act.image}
                   alt={act.alt}
@@ -71,15 +71,15 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-20 lg:mt-28">
-          <h3 className="text-2xl font-display mb-8 text-center">What guides us</h3>
-          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible">
+        <div className="mt-14 sm:mt-20 lg:mt-28">
+          <h3 className="text-xl sm:text-2xl font-display mb-6 sm:mb-8 text-center">What guides us</h3>
+          <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4">
             {values.map((value) => (
               <div
                 key={value.title}
-                className={`flex-shrink-0 w-64 lg:w-auto snap-start bg-white rounded-xl p-6 border-l-4 ${value.border} shadow-sm`}
+                className={`bg-white rounded-xl p-5 sm:p-6 border-l-4 ${value.border} shadow-sm`}
               >
-                <h4 className={`font-semibold mb-2 ${value.titleColor}`}>
+                <h4 className={`font-semibold mb-1 sm:mb-2 ${value.titleColor}`}>
                   {value.title}
                 </h4>
                 <p className="text-sm text-cth-warm">{value.description}</p>

@@ -5,12 +5,12 @@ const Contact = () => {
 
   return (
     <footer id="contact" className="bg-cth-charcoal text-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="lg:col-span-2">
-            <img src="/logo.png" alt="Christ The Hope" className="h-14 mb-4" />
-            <p className="font-accent text-xl text-cth-pink mb-4">the hope</p>
-            <p className="text-white/60 leading-relaxed mb-6 max-w-md">
+      <div className="container-site py-12 sm:py-16 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
+          <div className="sm:col-span-2">
+            <img src="/logo.png" alt="Christ The Hope" className="h-12 sm:h-14 mb-3 sm:mb-4" />
+            <p className="font-accent text-lg sm:text-xl text-cth-pink mb-3 sm:mb-4">the hope</p>
+            <p className="text-white/60 leading-relaxed mb-5 sm:mb-6 max-w-md text-sm sm:text-base">
               A community-driven children's center empowering disadvantaged children
               with the basic needs they deserve to thrive.
             </p>
@@ -41,20 +41,20 @@ const Contact = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-display mb-4">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><a href="#about" className="text-white/60 hover:text-white transition-colors">Our Story</a></li>
-              <li><a href="#what-we-do" className="text-white/60 hover:text-white transition-colors">What We Do</a></li>
-              <li><a href="#donate" className="text-white/60 hover:text-white transition-colors">Donate</a></li>
-              <li><a href="#gallery" className="text-white/60 hover:text-white transition-colors">Gallery</a></li>
+            <h4 className="text-base sm:text-lg font-display mb-3 sm:mb-4">Quick Links</h4>
+            <ul className="space-y-2 sm:space-y-3">
+              <li><a href="#about" className="text-white/60 hover:text-white transition-colors text-sm sm:text-base">Our Story</a></li>
+              <li><a href="#what-we-do" className="text-white/60 hover:text-white transition-colors text-sm sm:text-base">What We Do</a></li>
+              <li><a href="#donate" className="text-white/60 hover:text-white transition-colors text-sm sm:text-base">Donate</a></li>
+              <li><a href="#gallery" className="text-white/60 hover:text-white transition-colors text-sm sm:text-base">Gallery</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-display mb-4">Contact Us</h4>
-            <ul className="space-y-3 text-white/60">
+            <h4 className="text-base sm:text-lg font-display mb-3 sm:mb-4">Contact Us</h4>
+            <ul className="space-y-2 sm:space-y-3 text-white/60 text-sm sm:text-base">
               <li>
-                <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors">
+                <a href={`mailto:${siteConfig.email}`} className="hover:text-white transition-colors break-all">
                   {siteConfig.email}
                 </a>
               </li>
@@ -65,9 +65,9 @@ const Contact = () => {
               </li>
               <li>{siteConfig.location}</li>
               <li className="pt-2 border-t border-white/10">
-                <span className="text-white/40 text-sm block mb-1">M-Pesa Paybill</span>
+                <span className="text-white/40 text-xs sm:text-sm block mb-1">M-Pesa Paybill</span>
                 <span className="text-white font-semibold">{siteConfig.mpesa.paybill}</span>
-                <span className="text-white/40 text-sm block mt-1">{siteConfig.mpesa.account}</span>
+                <span className="text-white/40 text-xs sm:text-sm block mt-1">{siteConfig.mpesa.account}</span>
               </li>
             </ul>
           </div>
@@ -75,8 +75,8 @@ const Contact = () => {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6">
-          <p className="text-sm text-white/40 text-center">
+        <div className="container-site py-5 sm:py-6">
+          <p className="text-xs sm:text-sm text-white/40 text-center">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
         </div>

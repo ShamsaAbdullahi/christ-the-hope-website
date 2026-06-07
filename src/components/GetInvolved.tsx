@@ -41,32 +41,32 @@ const colorMap: Record<string, string> = {
 
 const GetInvolved = () => {
   return (
-    <section id="get-involved" className="py-20 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="get-involved" className="section-padding bg-white">
+      <div className="container-site">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <p className="text-cth-purple font-semibold uppercase tracking-wider text-sm mb-3">
             Get Involved
           </p>
-          <h2 className="text-4xl lg:text-5xl font-display text-balance mb-6">
+          <h2 className="section-heading mb-4 sm:mb-6">
             Be part of something beautiful
           </h2>
-          <p className="text-xl text-cth-warm leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-cth-warm leading-relaxed">
             There are many ways to support our mission and transform children's lives.
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {ways.map((way) => (
             <div
               key={way.title}
-              className={`bg-cth-cream rounded-2xl p-8 border-2 ${colorMap[way.color]} transition-all duration-300 hover:shadow-lg`}
+              className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border-2 ${colorMap[way.color]} transition-all duration-300 hover:shadow-lg`}
             >
-              <h3 className="text-2xl font-display mb-3">{way.title}</h3>
-              <p className="text-cth-warm leading-relaxed mb-6">{way.description}</p>
+              <h3 className="text-xl sm:text-2xl font-display mb-2 sm:mb-3">{way.title}</h3>
+              <p className="text-sm sm:text-base text-cth-warm leading-relaxed mb-4 sm:mb-6">{way.description}</p>
               <a
                 href={way.href}
                 {...(way.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="inline-flex items-center font-semibold text-cth-purple hover:text-cth-pink transition-colors"
+                className="inline-flex items-center font-semibold text-cth-purple hover:text-cth-pink transition-colors min-h-[44px]"
               >
                 {way.action}
                 <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

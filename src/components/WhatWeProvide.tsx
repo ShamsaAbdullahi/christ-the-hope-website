@@ -47,46 +47,46 @@ const colorMap: Record<string, { icon: string; border: string }> = {
 
 const WhatWeProvide = () => {
   return (
-    <section id="what-we-do" className="py-20 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="what-we-do" className="section-padding bg-white">
+      <div className="container-site">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
           <p className="text-cth-purple font-semibold uppercase tracking-wider text-sm mb-3">
             What We Provide
           </p>
-          <h2 className="text-4xl lg:text-5xl font-display text-balance mb-6">
+          <h2 className="section-heading mb-4 sm:mb-6">
             Meeting every need with love
           </h2>
-          <p className="text-xl text-cth-warm leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-cth-warm leading-relaxed">
             From shelter to education, healthcare to hope — we ensure every child has
             what they need to thrive.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {services.map((service) => {
             const colors = colorMap[service.color];
             return (
               <div
                 key={service.title}
-                className={`bg-cth-cream rounded-2xl p-8 border ${colors.border} hover:shadow-lg transition-shadow duration-300`}
+                className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border ${colors.border} hover:shadow-lg transition-shadow duration-300`}
               >
-                <div className={`inline-flex p-3 rounded-xl mb-5 ${colors.icon}`}>
+                <div className={`inline-flex p-3 rounded-xl mb-4 sm:mb-5 ${colors.icon}`}>
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-display mb-3">{service.title}</h3>
-                <p className="text-cth-warm leading-relaxed mb-4">{service.description}</p>
+                <h3 className="text-lg sm:text-xl font-display mb-2 sm:mb-3">{service.title}</h3>
+                <p className="text-sm sm:text-base text-cth-warm leading-relaxed mb-3 sm:mb-4">{service.description}</p>
                 <p className="text-sm font-medium text-cth-purple">{service.impact}</p>
               </div>
             );
           })}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-10 sm:mt-16 text-center">
           <a
             href="#donate"
-            className="inline-flex items-center px-8 py-4 bg-cth-pink hover:bg-cth-pink/90 text-white rounded-full font-semibold text-lg transition-all duration-300 shadow-lg"
+            className="inline-flex items-center justify-center w-full xs:w-auto px-8 py-3.5 sm:py-4 bg-cth-pink hover:bg-cth-pink/90 text-white rounded-full font-semibold text-base sm:text-lg transition-all duration-300 shadow-lg min-h-[48px]"
           >
             Support Our Programs
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
