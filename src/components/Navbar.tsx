@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 md:hidden">
             <a
               href="#donate"
-              className="px-4 py-2 bg-cth-pink text-white rounded-full font-semibold text-sm"
+              className="inline-flex items-center justify-center h-9 px-4 bg-cth-pink text-white rounded-full font-semibold text-sm leading-none"
             >
               Donate
             </a>

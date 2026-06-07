@@ -2,7 +2,7 @@ const DonateFab = () => {
   return (
     <a
       href="#donate"
-      className="fixed bottom-4 right-4 z-40 md:hidden px-5 py-3 bg-cth-pink text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-shadow safe-bottom min-h-[48px] flex items-center"
+      className="fixed right-4 z-40 md:hidden inline-flex items-center justify-center h-11 px-5 bg-cth-pink text-white rounded-full font-semibold text-sm leading-none shadow-lg hover:shadow-xl transition-shadow bottom-[calc(1rem+env(safe-area-inset-bottom,0px))]"
       aria-label="Donate via M-Pesa"
     >
       Donate

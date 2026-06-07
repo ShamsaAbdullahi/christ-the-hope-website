@@ -36,10 +36,6 @@ section[id] {
     display: none;
   }
 
-  .safe-bottom {
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-
   .section-padding {
     @apply py-14 sm:py-20 lg:py-32;
   }
