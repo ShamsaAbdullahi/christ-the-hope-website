@@ -2,20 +2,23 @@ const storyActs = [
   {
     label: 'The need',
     text: 'In our community, too many children grow up without the basics — a safe home, a warm meal, and someone who believes in their future.',
-    image: '/images/about-photo.jpeg',
-    alt: 'Children gathering at Christ The Hope',
+    image: '/images/welcome-boy.png',
+    alt: 'A child welcomed at Christ The Hope',
+    portrait: true,
   },
   {
     label: 'Our answer',
     text: 'Christ The Hope was born from one conviction: love in action changes lives. We opened our doors to be that love — steady, present, and real.',
-    image: '/images/hero_1.jpeg',
-    alt: 'A child at Christ The Hope',
+    image: '/images/welcome-boys.png',
+    alt: 'Children welcomed at Christ The Hope',
+    portrait: true,
   },
   {
     label: 'Our promise',
     text: 'Today we shelter, educate, feed, and walk alongside every child who walks through our gates — nurturing dreams and celebrating potential.',
-    image: '/images/hero_2.jpeg',
-    alt: 'Community at Christ The Hope',
+    image: '/images/group-photo.png',
+    alt: 'Christ The Hope community together',
+    portrait: false,
   },
 ];
 
@@ -59,12 +62,14 @@ const About = () => {
                   {act.text}
                 </p>
               </div>
-              <div className="relative aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl order-1 lg:order-none">
+              <div className={`relative rounded-xl sm:rounded-2xl overflow-hidden shadow-xl order-1 lg:order-none ${
+                act.portrait ? 'aspect-[3/4] max-w-sm mx-auto lg:max-w-none lg:mx-0' : 'aspect-[4/3]'
+              }`}>
                 <img
                   src={act.image}
                   alt={act.alt}
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>

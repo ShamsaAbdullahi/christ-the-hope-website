@@ -2,9 +2,9 @@ const Hero = () => {
   return (
     <section className="relative min-h-[100dvh] flex items-end sm:items-center overflow-hidden">
       <img
-        src="/images/about_1.jpeg"
-        alt="Children at Christ The Hope Children's Center"
-        className="absolute inset-0 w-full h-full object-cover object-center sm:object-[center_30%]"
+        src="/images/group-photo.png"
+        alt="Children and staff at Christ The Hope Children's Center"
+        className="absolute inset-0 w-full h-full object-cover object-[center_40%] sm:object-[center_35%]"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-cth-purple-deep/95 via-cth-purple-deep/80 to-cth-purple-deep/50 sm:bg-gradient-to-r sm:from-cth-purple-deep/90 sm:via-cth-purple-deep/75 sm:to-cth-purple-deep/40" />
 

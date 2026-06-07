@@ -1,9 +1,10 @@
 const photos = [
+  { src: '/images/group-photo.png', alt: 'Christ The Hope community in branded shirts' },
+  { src: '/images/welcome-boys.png', alt: 'Two children welcomed at Christ The Hope' },
+  { src: '/images/welcome-boy.png', alt: 'A smiling child at Christ The Hope' },
   { src: '/images/about_1.jpeg', alt: 'Children gathering in a circle' },
   { src: '/images/hero_1.jpeg', alt: 'Child at Christ The Hope' },
-  { src: '/images/hero_2.jpeg', alt: 'Community support' },
-  { src: '/images/about-photo.jpeg', alt: 'Children at the center' },
-  { src: '/images/about.jpeg', alt: 'Daily life at Christ The Hope' },
+  { src: '/images/hero_2.jpeg', alt: 'Community support at Christ The Hope' },
 ];
 
 const Gallery = () => {
@@ -36,7 +37,7 @@ const Gallery = () => {
       </div>
 
       {/* Desktop: grid */}
-      <div className="hidden lg:grid container-site grid-cols-3 xl:grid-cols-5 gap-4">
+      <div className="hidden lg:grid container-site grid-cols-3 gap-4">
         {photos.map((photo) => (
           <div key={photo.src} className="group">
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
