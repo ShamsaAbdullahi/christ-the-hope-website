@@ -121,7 +121,8 @@ const Contact = () => {
               <li className="pt-2 border-t border-white/10">
                 <span className="text-white/40 text-xs sm:text-sm block mb-1">M-Pesa Paybill</span>
                 <span className="text-white font-semibold">{siteConfig.mpesa.paybill}</span>
-                <span className="text-white/40 text-xs sm:text-sm block mt-1">{siteConfig.mpesa.account}</span>
+                <span className="text-white/40 text-xs sm:text-sm block mt-1">Acc: {siteConfig.mpesa.accountNumber}</span>
+                <span className="text-white/40 text-xs sm:text-sm block mt-1">{siteConfig.mpesa.accountName}</span>
               </li>
             </ul>
           </div>

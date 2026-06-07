@@ -14,8 +14,9 @@ export const siteConfig = {
     whatsappChannel: 'https://whatsapp.com/channel/0029Vb8tC5U3wtb16SwLrr2y',
   },
   mpesa: {
-    paybill: '000000',
-    account: 'Christ The Hope',
+    paybill: '400200',
+    accountNumber: '40041199',
+    accountName: 'CHRIST THE HOPE REHAB CENTRE',
   },
   impact: {
     children: '50+',

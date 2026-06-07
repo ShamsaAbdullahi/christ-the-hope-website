@@ -73,9 +73,15 @@ const Donate = () => {
               </span>
             </div>
             <div className="flex flex-col xs:flex-row xs:justify-between xs:items-center gap-1 xs:gap-4 py-3 sm:py-4 px-4 sm:px-5 bg-cth-cream rounded-xl">
+              <span className="text-cth-warm font-medium text-sm sm:text-base">Account Number</span>
+              <span className="text-xl sm:text-2xl font-display font-bold text-cth-purple tracking-wider">
+                {siteConfig.mpesa.accountNumber}
+              </span>
+            </div>
+            <div className="flex flex-col xs:flex-row xs:justify-between xs:items-center gap-1 xs:gap-4 py-3 sm:py-4 px-4 sm:px-5 bg-cth-cream rounded-xl">
               <span className="text-cth-warm font-medium text-sm sm:text-base">Account Name</span>
               <span className="font-semibold text-cth-charcoal text-sm sm:text-base break-words text-left xs:text-right">
-                {siteConfig.mpesa.account}
+                {siteConfig.mpesa.accountName}
               </span>
             </div>
           </div>
@@ -97,9 +103,6 @@ const Donate = () => {
             </a>
           </div>
 
-          <p className="text-xs text-cth-warm/70 text-center mt-5 sm:mt-6">
-            Paybill number is a placeholder — real details coming soon.
-          </p>
         </div>
       </div>
     </section>
