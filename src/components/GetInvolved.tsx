@@ -24,9 +24,9 @@ const ways = [
   },
   {
     title: 'Spread the Word',
-    description: 'Follow our journey and share our mission with your community.',
-    action: 'Follow on Instagram',
-    href: siteConfig.instagram,
+    description: 'Follow us on Instagram, TikTok, or join our WhatsApp channel to share our mission.',
+    action: 'Follow Us',
+    href: siteConfig.socials.instagram,
     external: true,
     color: 'green',
   },

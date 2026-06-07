@@ -98,7 +98,7 @@ const Donate = () => {
           </div>
 
           <p className="text-xs text-cth-warm/70 text-center mt-5 sm:mt-6">
-            Paybill and contact details are placeholders — real numbers coming soon.
+            Paybill number is a placeholder — real details coming soon.
           </p>
         </div>
       </div>

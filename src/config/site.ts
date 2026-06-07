@@ -1,12 +1,18 @@
-// Placeholder values — replace with real details when available
 export const siteConfig = {
   name: "Christ The Hope Children's Center",
   tagline: 'the hope',
   location: 'Nairobi, Kenya',
   email: 'info@christthehope.org',
-  phone: '+254 700 000 000',
-  whatsapp: '+254700000000',
-  instagram: 'https://www.instagram.com/christthehopecc/',
+  phones: [
+    { display: '+254 723 480490', tel: '+254723480490' },
+    { display: '0720 762 003', tel: '+254720762003' },
+  ],
+  whatsapp: '+254723480490',
+  socials: {
+    instagram: 'https://www.instagram.com/christthehopecc?igsh=MWl5ZTY2eHkxbmlmaQ==',
+    tiktok: 'https://www.tiktok.com/@christthehopecc?_r=1&_t=ZS-95c0Y1dMg59',
+    whatsappChannel: 'https://whatsapp.com/channel/0029Vb8tC5U3wtb16SwLrr2y',
+  },
   mpesa: {
     paybill: '000000',
     account: 'Christ The Hope',
