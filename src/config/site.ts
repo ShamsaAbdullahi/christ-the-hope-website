@@ -4,8 +4,8 @@ export const siteConfig = {
   location: 'Nairobi, Kenya',
   email: 'info@christthehope.org',
   phones: [
-    { display: '+254 723 480490', tel: '+254723480490' },
-    { display: '0720 762 003', tel: '+254720762003' },
+    { label: 'Call', display: '0720 762 003', tel: '+254720762003' },
+    { label: 'Alternate', display: '+254 723 480 490', tel: '+254723480490' },
   ],
   whatsapp: '+254723480490',
   socials: {
