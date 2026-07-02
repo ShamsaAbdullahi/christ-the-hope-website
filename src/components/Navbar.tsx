@@ -37,9 +37,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container-site">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          <a href="#" className="flex items-center shrink-0">
-            <img src="/logo.png" alt="Christ The Hope" className="h-9 sm:h-11 w-auto" />
+        <div className="flex items-center justify-between h-20 sm:h-24">
+          <a href="#" className="flex items-center shrink-0" aria-label="Christ The Hope home">
+            <img
+              src="/logo.png"
+              alt="Christ The Hope"
+              className="h-14 sm:h-16 lg:h-[4.5rem] w-auto transition-transform duration-300 hover:scale-105"
+            />
           </a>
 
           <div className="hidden md:flex items-center gap-6 lg:gap-8">
@@ -86,7 +90,7 @@ const Navbar = () => {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-cth-cream z-40 overflow-y-auto">
+        <div className="md:hidden fixed inset-0 top-20 bg-cth-cream z-40 overflow-y-auto">
           <div className="container-site py-6 flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
