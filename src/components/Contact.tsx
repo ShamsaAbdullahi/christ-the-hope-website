@@ -8,6 +8,7 @@ const whatsappIcon = (
 
 const Contact = () => {
   const whatsappUrl = `https://wa.me/${siteConfig.whatsapp.replace(/\D/g, '')}`;
+  const whatsappPhone = siteConfig.phones.find((phone) => phone.tel === siteConfig.whatsapp) ?? siteConfig.phones[0];
 
   const socialLinks = [
     {
@@ -49,7 +50,7 @@ const Contact = () => {
       <div className="container-site py-12 sm:py-16 lg:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12">
           <div className="sm:col-span-2">
-            <img src="/logo.png" alt="Christ The Hope" className="h-12 sm:h-14 mb-3 sm:mb-4" />
+            <img src="/logo.png" alt="Christ The Hope" className="h-16 sm:h-20 mb-3 sm:mb-4" />
             <p className="font-accent text-lg sm:text-xl text-cth-pink mb-3 sm:mb-4">the hope</p>
             <p className="text-white/60 leading-relaxed mb-5 sm:mb-6 max-w-md text-sm sm:text-base">
               A community-driven children's center empowering disadvantaged children
@@ -93,7 +94,7 @@ const Contact = () => {
               {siteConfig.phones.map((phone) => (
                 <li key={phone.tel}>
                   <a href={`tel:${phone.tel}`} className="hover:text-white transition-colors">
-                    {phone.display}
+                    {phone.label}: {phone.display}
                   </a>
                 </li>
               ))}
@@ -104,7 +105,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  WhatsApp: {siteConfig.phones[0].display}
+                  WhatsApp: {whatsappPhone.display}
                 </a>
               </li>
               <li>
