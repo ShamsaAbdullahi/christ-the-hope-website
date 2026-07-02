@@ -40,7 +40,7 @@ const Donate = () => {
             <button
               key={tier.amount}
               onClick={() => setSelectedTier(index)}
-              className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 border-2 ${
+            className={`rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 border-2 hover-lift ${
                 selectedTier === index
                   ? 'bg-white border-cth-pink shadow-lg sm:scale-105'
                   : 'bg-white/60 border-transparent hover:border-cth-pink/30'
@@ -54,7 +54,7 @@ const Donate = () => {
           ))}
         </div>
 
-        <div className="max-w-lg mx-auto bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 shadow-xl">
+        <div className="max-w-lg mx-auto bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 shadow-xl animate-fade-up">
           <div className="text-center mb-6 sm:mb-8">
             <div className="inline-flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 bg-cth-green/10 rounded-full mb-3 sm:mb-4">
               <svg className="w-6 h-6 sm:w-7 sm:h-7 text-cth-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
