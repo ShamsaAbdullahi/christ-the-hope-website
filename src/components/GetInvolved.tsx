@@ -59,7 +59,7 @@ const GetInvolved = () => {
           {ways.map((way) => (
             <div
               key={way.title}
-              className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border-2 ${colorMap[way.color]} transition-all duration-300 hover:shadow-lg`}
+              className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border-2 ${colorMap[way.color]} hover-lift`}
             >
               <h3 className="text-xl sm:text-2xl font-display mb-2 sm:mb-3">{way.title}</h3>
               <p className="text-sm sm:text-base text-cth-warm leading-relaxed mb-4 sm:mb-6">{way.description}</p>
