@@ -68,7 +68,7 @@ const WhatWeProvide = () => {
             return (
               <div
                 key={service.title}
-                className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border ${colors.border} hover:shadow-lg transition-shadow duration-300`}
+                className={`bg-cth-cream rounded-xl sm:rounded-2xl p-5 sm:p-8 border ${colors.border} hover-lift`}
               >
                 <div className={`inline-flex p-3 rounded-xl mb-4 sm:mb-5 ${colors.icon}`}>
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
