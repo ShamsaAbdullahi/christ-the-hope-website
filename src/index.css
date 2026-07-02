@@ -14,6 +14,55 @@
   }
 }
 
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes carousel-photo {
+  from {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes carousel-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes gallery-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.375rem));
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,5 +95,46 @@ section[id] {
 
   .container-site {
     @apply max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 700ms ease both;
+  }
+
+  .animate-carousel-photo {
+    animation: carousel-photo 650ms ease both;
+  }
+
+  .hero-photo-motion {
+    animation: hero-zoom 20s ease-out both;
+    transform-origin: center;
+  }
+
+  .carousel-progress {
+    animation: carousel-progress 3500ms linear both;
+    transform-origin: left center;
+  }
+
+  .gallery-marquee {
+    animation: gallery-marquee 34s linear infinite;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .carousel-button {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-full bg-white text-cth-purple shadow-md transition-all duration-300 hover:bg-cth-purple hover:text-white hover:shadow-lg focus:outline-none focus-visible:ring-4 focus-visible:ring-cth-pink/30;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
   }
 }
